@@ -1,0 +1,133 @@
+.about{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 110px 15px 120px;
+
+	.about-right{
+		flex-basis: 48.8%;
+		margin-left: 130px;
+
+		img{
+			display: block;
+			max-width: 100%;
+		}
+
+	}
+
+	.about-left{
+		flex-basis: calc(100% - 48.8% - 130px);
+
+		.about-title{
+			opacity: 0.8;
+			font-size: 46px;
+			font-weight: 700;
+			line-height: 49px;
+			text-transform: uppercase;
+			letter-spacing: 5.52px;
+
+			&::before{
+				content: "";
+				margin-bottom: 20px;
+				display: block;
+				width: 60px;
+				height: 4px;
+				background-color: #212121;
+				opacity: 0.6;
+			}
+
+		}
+
+		p{
+			color: $gray;
+			font-family: Asap;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 26px;
+		}
+
+		a{
+			color: $gray;
+			font-family: Asap;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 67px;
+			text-transform: uppercase;
+			// Text style for "D, OWNLOAD"
+			letter-spacing: 0.96px;
+			margin-top: 36px;
+			@include btn(){
+				border: 1px solid $gray;
+				padding: 20px 40px;
+				width: auto;
+
+			}
+
+			&:hover{
+				outline: none;
+				background-color: $black;
+				color: $black;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 980px) {
+
+	.about{
+		padding: 100px 15px;
+
+		.about-right{
+			margin-left: 55px;
+		}
+
+		.about-left{
+			flex-basis: calc(100% - 48.8% - 55px);
+		}
+
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.about{
+
+		.about-left{
+
+			.about-title{
+				font-size: 36px;
+
+				&::before{
+					display: none;
+				}
+
+			}
+
+		}
+
+		.about-right{
+			margin: 0 auto;
+		}
+
+	}
+
+}
+
+@media (max-width: 680px) {
+
+	.about{
+		flex-direction: column;
+		text-align: center;
+		
+		.about-left{
+			padding-bottom: 50px;
+		}
+
+	}
+
+}

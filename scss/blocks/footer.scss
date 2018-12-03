@@ -1,0 +1,51 @@
+.contact-footer{
+	padding-top: 25px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.contact-footer__social{
+		flex-basis: 40%;
+		text-align: left;
+
+		ul{
+
+			li{
+				display: inline-block;
+				margin: 0 5px;
+			}
+
+		}
+
+	}
+
+	.contact-footer__copyright{
+		flex-basis: 60%;
+    	transform: translateX(-33%);
+
+		p{
+			color: $white;
+		}
+
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.contact-footer{
+
+		.contact-footer__social{
+			flex-basis: 100%;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		.contact-footer__copyright{
+			flex-basis: 100%;
+			transform: none;
+		}
+
+	}
+
+}

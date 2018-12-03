@@ -1,0 +1,143 @@
+.skill{
+	padding: 140px 0 160px;
+	text-align: center;
+
+	.skill-wrap{
+		position: relative;
+
+		.skill-title{
+			opacity: 0.8;
+			color: $gray;
+			font-family: Asap;
+			font-size: 46px;
+			font-weight: 700;
+			line-height: 49px;
+			text-transform: uppercase;
+			letter-spacing: 5.52px;
+
+			&::before{
+				content: "";
+				display: block;
+				width: 60px;
+				height: 4px;
+				background-color: #212121;
+				opacity: 0.6;
+				margin: 0 auto;
+				margin-bottom: 19px;
+			}
+
+		}
+
+		.skill-block{
+			background: url('../img/skill_wave.png') center no-repeat,
+			url('../img/wave_bg_stroke.png') center no-repeat #fafafa;
+			background-size: cover;
+			max-width: 100%;
+    		height: 400px;
+			margin: 10px 25px;
+			position: relative;
+
+			.skill-element{
+				display: flex;
+			    justify-content: space-between;
+			    flex-wrap: nowrap;
+			    position: relative;
+
+			    .skill-point{
+			    	position: relative;
+
+					&:nth-child(1){
+						top: 110px;
+    					left: 138px;
+					}
+
+					&:nth-child(2){
+						top: 178px;
+    					right: -21px;
+					}
+
+					&:nth-child(3){
+						top: 8px;
+    					right: 80px;
+					}
+
+					&:nth-child(4){
+						top: 110px;
+    					right: 222px;
+					}
+
+			    }
+
+			}
+
+			.skill-procent{
+				position: absolute;
+				left: -40px;
+
+				ul{
+					position: absolute;
+    				top: -40px;
+
+					li{
+						padding: 26px 0;
+					}
+
+				}
+
+			}
+
+			.skill-icon{
+				position: absolute;
+				bottom: -40px;
+				left: 50%;
+				transform: translateX(-50%);
+
+				ul{
+
+					li{
+						display: inline-block;
+    					position: relative;
+
+						&:nth-child(1){
+							left: -325px;
+						}
+
+						&:nth-child(2){
+							left: -120px;
+						}
+
+						&:nth-child(3){
+							left: 90px;
+						}
+
+						&:nth-child(4){
+							left: 270px;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 1200px) {
+
+	.skill{
+		padding: 100px 0;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.skill{
+		display: none;
+	}
+
+}
